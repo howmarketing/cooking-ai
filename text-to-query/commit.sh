@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git add playground.ipynb
+git add -A
 
 git commit -m "playground notebook updated with new code examples and experiments
 
@@ -11,3 +11,12 @@ git commit -m "playground notebook updated with new code examples and experiment
 - [x] Include various text processing and data structure experiments"
 
 git status
+
+# Ask user if he wants to push the changes to the remote repository
+read -p "Do you want to push the changes to the remote repository? (y/n): " push
+
+if [ "$push" = "y" ]; then
+    git push
+else
+    echo "Changes not pushed to the remote repository."
+fi
