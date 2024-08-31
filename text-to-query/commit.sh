@@ -1,10 +1,13 @@
 #!/bin/bash
 
-git commit -m "Implement natural language to MySQL query converter using Google's Generative AI (Gemini)
+git add playground.ipynb
 
-- Set up environment and configure Gemini AI model
-- Define helper functions for chat history and input processing
-- Create recursive UI for natural language to SQL query conversion
-- Implement main Ux() function for user interaction and query generation"
+git commit -m "playground notebook updated with new code examples and experiments
+
+- [x] Add frequency dictionary and Counter examples
+- [x] Implement bigram analysis using defaultdict
+- [x] Explore word prediction and most common words
+- [x] Add environment variable handling with dotenv
+- [x] Include various text processing and data structure experiments"
 
 git status
