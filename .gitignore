@@ -1,3 +1,4 @@
+.vscode/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -124,6 +125,7 @@ celerybeat.pid
 # Environments
 .env
 .venv
+env.sh
 env/
 venv/
 ENV/
