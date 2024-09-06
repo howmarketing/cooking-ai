@@ -203,7 +203,7 @@ async def get_current_user(token: str = Depends(oauth2_scheme)):
 @app.post("/upload/")
 async def upload_files(
     files: List[UploadFile] = File(...),
-    background_tasks: BackgroundTasks,
+    background_tasks: BackgroundTasks = [],
     db: SessionLocal = Depends(get_db),
     current_user: str = Depends(get_current_user)
 ):
